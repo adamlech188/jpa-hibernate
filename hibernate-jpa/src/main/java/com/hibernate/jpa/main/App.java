@@ -1,4 +1,4 @@
-package com.hibernate.jpa;
+package com.hibernate.jpa.main;
 
 /**
  * Hello world!
