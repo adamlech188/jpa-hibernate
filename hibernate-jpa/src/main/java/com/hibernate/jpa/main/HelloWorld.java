@@ -18,7 +18,8 @@ import com.hibernate.jpa.domain.Message;
 public class HelloWorld {
 	public static void main(String[] args) {
 		// First unit of work
-
+		
+		
 		Configuration configuration = new Configuration().configure();
 		StandardServiceRegistryBuilder builder = new StandardServiceRegistryBuilder()
 				.applySettings(configuration.getProperties());
