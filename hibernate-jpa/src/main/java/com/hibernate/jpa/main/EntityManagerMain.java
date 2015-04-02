@@ -9,6 +9,7 @@ import javax.persistence.Persistence;
 
 import com.hibernate.jpa.domain.Message;
 
+
 public class EntityManagerMain {
 
 	public static void main(String[] argds) {

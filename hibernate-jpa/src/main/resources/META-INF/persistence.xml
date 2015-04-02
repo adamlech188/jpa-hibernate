@@ -5,17 +5,16 @@
 	version="1.0">
 
 	<persistence-unit name="helloworld">
-	<provider>org.hibernate.ejb.HibernatePersistence</provider>
-	
+	<jta-data-source>java:/HelloWorldDS</jta-data-source>
 		<properties>
 			<property name="hibernate.hbm2ddl.auto" value="update" />
 			<property name="hibernate.dialect" value="org.hibernate.dialect.MySQLDialect" />
 			<property name="hibernate.connection.driver_class" value="com.mysql.jdbc.Driver" />
 
 			<!-- Assume test is the database name -->
-			<property name="hibernate.connection.url" value="jdbc:mysql://localhost:3306/hibernatejpa" />
+		<!-- 	<property name="hibernate.connection.url" value="jdbc:mysql://localhost:3306/hibernatejpa" />
 			<property name="hibernate.connection.username" value="root" />
-			<property name="hibernate.connection.password" value="simba" />
+			<property name="hibernate.connection.password" value="simba" /> -->
 			<property name="show_sql" value="true" />
 			<property name="format_sql" value="true" />
 		</properties>
